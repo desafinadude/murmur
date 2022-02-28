@@ -62,7 +62,8 @@ void main() {
 	zoneRadius = separationDistance + alignmentDistance + cohesionDistance; 
 	separationThresh = separationDistance / zoneRadius;
 	alignmentThresh = ( separationDistance + alignmentDistance ) / zoneRadius;
-	zoneRadiusSquared = zoneRadius * 4.0;
+	zoneRadiusSquared = zoneRadius * zoneRadius; // World size can be changed here
+	
 
 
 	vec2 uv = gl_FragCoord.xy / resolution.xy;
