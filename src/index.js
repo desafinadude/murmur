@@ -59,10 +59,10 @@ float rand( vec2 co ){
 
 void main() {
 
-	zoneRadius = separationDistance + alignmentDistance + cohesionDistance;
+	zoneRadius = separationDistance + alignmentDistance + cohesionDistance; 
 	separationThresh = separationDistance / zoneRadius;
 	alignmentThresh = ( separationDistance + alignmentDistance ) / zoneRadius;
-	zoneRadiusSquared = zoneRadius * zoneRadius;
+	zoneRadiusSquared = zoneRadius * 4.0;
 
 
 	vec2 uv = gl_FragCoord.xy / resolution.xy;
